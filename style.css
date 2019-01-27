@@ -319,6 +319,11 @@ header nav{
     background-color: black;
 }
 
+.signup-wrapper a{
+    position: relative;
+    left: 43%;
+}
+
 .signup-wrapper div{
     margin: 20px auto;
 }

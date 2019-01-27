@@ -14,7 +14,7 @@
         </div>
 
     <?php
-        if (isset($_SESSION['u_id'])){
+        if (isset($_SESSION['beg_trick']) && $_SESSION['beg_trick'] == 'Yes'){
             echo 
             '
             <div id="overview" class="tab-content">
@@ -32,10 +32,7 @@
                     </p>
                     <br><br>
                     <img src="banner.png" alt="training" class="summary-banner">
-                    <br><br>
-                    <form action="program.php">
-                        <button class="signup-button">Signup Now</button>
-                    </form>
+                    <br>
                 </div>
             </div>
 
@@ -50,8 +47,8 @@
                         <br>
                         <p>
                             Beginning motions to get the blood flowing and improve flexibility
-                            <a href="program.php">
-                            <img align="right" src="lock.png" alt="play button">
+                            <a href="#" id="warmup_stretching" onclick="popup_open(this.id);">
+                            <img align="right" src="play_button.png" alt="play button">
                             </a>
                         </p>
                         <br>
@@ -62,8 +59,8 @@
                         <br>
                         <p>
                             Focus on the gymnastics side of tricking through basic body inversions
-                            <a href="program.php">
-                            <img align="right" src="lock.png" alt="play button">
+                            <a href="#" id="flip_day" onclick="popup_open(this.id);">
+                            <img align="right" src="play_button.png" alt="play button">
                             </a>
                         </p>
                         
@@ -75,8 +72,8 @@
                         <br>
                         <p>
                             Focus on the martial arts side of tricking through technical striking
-                            <a href="program.php">
-                            <img align="right" src="lock.png" alt="play button">
+                            <a href="#" id="kick_day" onclick="popup_open(this.id);">
+                            <img align="right" src="play_button.png" alt="play button">
                             </a>                    
                         </p>
                         <br>
@@ -87,8 +84,8 @@
                         <br>
                         <p>
                             Put it all together with chaining tricks that you have learned or are working towards
-                            <a href="program.php">
-                            <img align="right" src="lock.png" alt="play button">
+                            <a href="#" id="combo_day" onclick="popup_open(this.id);">
+                            <img align="right" src="play_button.png" alt="play button">
                             </a>
                         </p>
                         <br>
@@ -99,8 +96,8 @@
                         <br>
                         <p>
                             Target the entire body with strength training to enhance tricking power
-                            <a href="program.php">
-                            <img align="right" src="lock.png" alt="play button">
+                            <a href="#" id="weight_day" onclick="popup_open(this.id);">
+                            <img align="right" src="play_button.png" alt="play button">
                             </a>
                         </p>
                         <br>
@@ -119,8 +116,8 @@
                     <br>
                     <p>
                         Beginning motions to get the blood flowing and improve flexibility
-                        <a href="program.php">
-                            <img align="right" src="lock.png" alt="file button">
+                        <a href="KDA_Beginner_Tricking_Warmup_Stretching.pdf">
+                            <img align="right" src="pdf.png" alt="file button">
                         </a>
                     </p>
                     <br>
@@ -131,8 +128,8 @@
                     <br>
                     <p>
                         Focus on the gymnastics side of tricking through basic body inversions
-                        <a href="program.php">
-                            <img align="right" src="lock.png" alt="file button">
+                        <a href="KDA_Beginner_Tricking_FlipDay.pdf">
+                            <img align="right" src="pdf.png" alt="file button">
                         </a>
                     </p>
                     <br>
@@ -143,8 +140,8 @@
                     <br>
                     <p>
                         Focus on the martial arts side of tricking through technical striking
-                        <a href="program.php">
-                            <img align="right" src="lock.png" alt="file button">
+                        <a href="KDA_Beginner_Tricking_KickDay.pdf">
+                            <img align="right" src="pdf.png" alt="file button">
                         </a>
                     </p>
                     <br>
@@ -155,8 +152,8 @@
                     <br>
                     <p>
                         Put it all together with chaining tricks that you have learned or are working towards
-                        <a href="program.php">
-                            <img align="right" src="lock.png" alt="file button">
+                        <a href="KDA_Beginner_Tricking_ComboDay.pdf">
+                            <img align="right" src="pdf.png" alt="file button">
                         </a>
                     </p>
                     <br>
@@ -167,8 +164,8 @@
                     <br>
                     <p>
                         Target the entire body with strength training to enhance tricking power
-                        <a href="program.php">
-                            <img align="right" src="lock.png" alt="file button">
+                        <a href="KDA_Beginner_Tricking_WeightLift.pdf">
+                            <img align="right" src="pdf.png" alt="file button">
                         </a>
                     </p>
                     <br>
@@ -197,7 +194,7 @@
                     <br><br>
                     <img src="banner.png" alt="training" class="summary-banner">
                     <br><br>
-                    <form action="signup.php">
+                    <form action="login.php">
                         <button class="signup-button">Signup Now</button>
                     </form>
                 </div>
@@ -214,7 +211,7 @@
                         <br>
                         <p>
                             Beginning motions to get the blood flowing and improve flexibility
-                            <a href="signup.php">
+                            <a href="login.php">
                             <img align="right" src="lock.png" alt="play button">
                             </a>
                         </p>
@@ -226,7 +223,7 @@
                         <br>
                         <p>
                             Focus on the gymnastics side of tricking through basic body inversions
-                            <a href="signup.php">
+                            <a href="login.php">
                             <img align="right" src="lock.png" alt="play button">
                             </a>
                         </p>
@@ -239,7 +236,7 @@
                         <br>
                         <p>
                             Focus on the martial arts side of tricking through technical striking
-                            <a href="signup.php">
+                            <a href="login.php">
                             <img align="right" src="lock.png" alt="play button">
                             </a>                    
                         </p>
@@ -251,7 +248,7 @@
                         <br>
                         <p>
                             Put it all together with chaining tricks that you have learned or are working towards
-                            <a href="signup.php">
+                            <a href="login.php">
                             <img align="right" src="lock.png" alt="play button">
                             </a>
                         </p>
@@ -263,7 +260,7 @@
                         <br>
                         <p>
                             Target the entire body with strength training to enhance tricking power
-                            <a href="signup.php">
+                            <a href="login.php">
                             <img align="right" src="lock.png" alt="play button">
                             </a>
                         </p>
@@ -283,7 +280,7 @@
                     <br>
                     <p>
                         Beginning motions to get the blood flowing and improve flexibility
-                        <a href="signup.php">
+                        <a href="login.php">
                             <img align="right" src="lock.png" alt="file button">
                         </a>
                     </p>
@@ -295,7 +292,7 @@
                     <br>
                     <p>
                         Focus on the gymnastics side of tricking through basic body inversions
-                        <a href="signup.php">
+                        <a href="login.php">
                             <img align="right" src="lock.png" alt="file button">
                         </a>
                     </p>
@@ -307,7 +304,7 @@
                     <br>
                     <p>
                         Focus on the martial arts side of tricking through technical striking
-                        <a href="signup.php">
+                        <a href="login.php">
                             <img align="right" src="lock.png" alt="file button">
                         </a>
                     </p>
@@ -319,7 +316,7 @@
                     <br>
                     <p>
                         Put it all together with chaining tricks that you have learned or are working towards
-                        <a href="signup.php">
+                        <a href="login.php">
                             <img align="right" src="lock.png" alt="file button">
                         </a>
                     </p>
@@ -331,7 +328,7 @@
                     <br>
                     <p>
                         Target the entire body with strength training to enhance tricking power
-                        <a href="signup.php">
+                        <a href="login.php">
                             <img align="right" src="lock.png" alt="file button">
                         </a>
                     </p>

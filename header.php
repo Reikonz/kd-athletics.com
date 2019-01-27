@@ -10,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="backend.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <title>kdathletics</title>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <header>
@@ -31,9 +31,7 @@
                             </form>
                             <p>Welcome '.$_SESSION['u_first'].'!</p>';
                     }else{
-                        echo '<form action="includes/login.inc.php" method="POST">
-                            <input type="text" name="uid" placeholder="Username/e-mail">
-                            <input type="password" name="pwd" placeholder="password">
+                        echo '<form action="login.php" method="POST">
                             <button type="submit" name="submit">Login</button>
                             </form>';
                     }

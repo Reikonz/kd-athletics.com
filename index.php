@@ -5,9 +5,17 @@
     <div class="hero-wrapper">
         <div>
             <h1 style="font-size:50px">Start Your Tricking Journey</h1>
-            <form action="signup.php">
-                <button>Sign Up</button>
-            </form>
+            <?php
+                if (isset($_SESSION['u_id'])){
+                }else{
+                    echo 
+                    '
+                    <form action="signup.php">
+                        <button>Sign Up</button>
+                    </form>
+                    ';
+                }
+            ?>
 
         </div>
     </div>
