@@ -3,7 +3,7 @@
 ?>
 
 <div class="progression-wrapper">
-    <div class="tab-wrapper">
+    <div class="tree-wrapper">
         <div class="tab-nav">
             <button class="tab-button" onclick="tab_chooser(event, 'kicks')" id="defaultOpen">Kicks</button>
             <button class="tab-button" onclick="tab_chooser(event, 'flips')">Flips</button>
